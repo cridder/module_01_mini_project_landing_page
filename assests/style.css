@@ -5,3 +5,44 @@
     font-family: 'Nunito', sans-serif;
   }
 
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sticky_header */
+/* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+
+.header {
+    padding: 10px 16px;
+    background-color: rgb(189, 189, 189);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.footer {
+    padding: 10px 16px;
+    background-color: rgb(100, 100, 100);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* List items in navigation bar */
+li {
+    /* Sets display to inline */
+    display: inline;
+    top: 0;
+    float: right;
+    padding-right: 50px;
+    /* padding: 10px 16px; */
+    list-style-type: none;
+    background-color: rgb(189, 189, 189);
+  }
+
+  
+
+
+

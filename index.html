@@ -12,30 +12,59 @@
 </head>
 <body>
     <header id="top">
-      <h1>Header - Landing Page</h1>
+      <!-- <h1>Header - Landing Page</h1> -->
+      <header class="header" id="myHeader">
+        <nav>
+          <ul>
+            <li>
+                <a href="https://github.com/cridder">GitHub</a>
+            <li>
+                <a href="https://www.linkedin.com/in/chrisridder/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </header>
     <main>
         <figure>
             <img src="./assests/sample.jpg" alt="Chris Ridder Profile Image">
             <figcaption>Profile Image</figcaption>
         </figure>
-        <form action="./assests/thanks.html">
+        <form action="./assests/thanks.html" id="contact">
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" id="fname" name="fname" value=""><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
             <input type="submit" value="Submit">
           </form>
     </main>
     <footer>
         <!-- <p>Footer - © 2022 Chris Ridder, Confidential and Proprietary. All Rights Reserved.</p> -->
-        <p> 
+        <h6> 
             © 
             <script>
                     document.write(new Date().getFullYear())
             </script> 
             Chris Ridder, Confidential and Proprietary. All Rights Reserved.
-        </p>
+        </h6>
       </footer>
-</body>
+
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+    </body>
 </html>
