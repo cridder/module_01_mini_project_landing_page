@@ -1,3 +1,6 @@
+# GitHub Page
+https://cridder.github.io/module_01_mini_project_landing_page/ 
+
 # Module 01 Mini-Project: Landing Page
 
 In this mini-project, you will build a landing page using HTML and CSS. While you will be responsible for your own landing page, you will work in a group to brainstorm and share ideas.
