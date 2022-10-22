@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<title>Landing Page</title>
 </head>
 <body>
     <header id="top">
       <h1>Header - Landing Page</h1>
     </header>
     <main>
-
+        <figure>
+            <img src="./assests/sample.jpg" alt="Chris Ridder Profile Image">
+            <figcaption>Profile Image</figcaption>
+        </figure>
+        <form action="./assests/thanks.html">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </form>
     </main>
     <footer>
-        <p>Footer - Landing Page</p>
+        <!-- <p>Footer - © 2022 Chris Ridder, Confidential and Proprietary. All Rights Reserved.</p> -->
+        <p> 
+            © 
+            <script>
+                    document.write(new Date().getFullYear())
+            </script> 
+            Chris Ridder, Confidential and Proprietary. All Rights Reserved.
+        </p>
       </footer>
 </body>
 </html>
