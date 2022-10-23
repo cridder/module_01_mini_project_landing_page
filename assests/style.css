@@ -1,7 +1,7 @@
 /* css file for landing page */
 
 *{
-    background-color: rgb(212, 212, 212);
+    background-color: #d4d4d4;
     font-family: 'Nunito', sans-serif;
   }
 
@@ -15,8 +15,16 @@ a {
     background-color: rgb(189, 189, 189);
 }
 
+h5 {
+  color: red;
+}
+
 h6 {
   background-color: rgb(100, 100, 100);
+}
+
+main {
+  margin-top: 75px;
 }
 
 footer {
