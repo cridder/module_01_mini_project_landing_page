@@ -8,28 +8,25 @@
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sticky_header */
 /* https://www.w3schools.com/howto/howto_js_sticky_header.asp */
 
-.header {
-    padding: 10px 16px;
+/*  */
+/* Type Selectors */
+/*  */
+a {
     background-color: rgb(189, 189, 189);
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+}
+
+h6 {
+  background-color: rgb(100, 100, 100);
+}
 
 footer {
-    padding: 10px 16px;
+    margin-top: 20px;
     background-color: rgb(100, 100, 100);
     position: fixed;
     width: 100%;
   }
   
- .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* List items in navigation bar */
+/* List items in navigation bar */
 li {
     /* Sets display to inline */
     display: inline;
@@ -40,6 +37,34 @@ li {
     list-style-type: none;
     background-color: rgb(189, 189, 189);
   }
+
+/*  */
+/* Class selectors */
+/*  */
+.header {
+    padding: 10px 16px;
+    background-color: rgb(189, 189, 189);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + main {
+  padding-top: 102px;
+}
+
+/*  */
+/* Id selectors */
+/*  */
+
+
+
 
   
 
